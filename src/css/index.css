@@ -1,0 +1,133 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/data/assets/Poppins-Regular.ttf');
+}
+
+:root {
+  --background-color: #25294a;
+  --primary-color: #2d325a;
+  --secondary-color: #202442;
+  --accent-color: #4b5396;
+
+  --text-primary-color: #ffffff;
+  --unselected-color: #c7c8d0;
+  --selected-color: #ffffff;
+
+  --legendary-color: #926d45;
+  --epic-color: #7b5c90;
+
+  /* pq = Primary Quest */
+  --pq-bg: #333d49;
+  --pq-text: #d3bc8e;
+  --pq-text2: #8c836f;
+
+  --quest-unselected: #4e5765;
+  --quest-selected: #ede5da;
+  --quest-accent: #9b927d;
+
+  /* qt = Quest Text */
+  --qt-unselected: #ede5da;
+  --qt2-unselected: #8e9295;
+  --qt-selected: #4d5568;
+  --qt2-selected: #a6a5a7;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--background-color);
+
+  #root {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+p {
+  color: var(--text-primary-color);
+  margin: 0;
+}
+
+h1 {
+  color: var(--text-primary-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  color: var(--text-primary-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0;
+}
+
+h3 {
+  color: var(--text-primary-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
